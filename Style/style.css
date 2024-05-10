@@ -52,6 +52,7 @@
 html
 {
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 body
 {
@@ -60,68 +61,27 @@ body
     width:100%;
     background: var(--bg);
     color: var(--text-secondary);
+opacity: 1;
+background-image: radial-gradient(var(--text-secondary) 0.5px, var(--bg) 0.5px);
+background-size: 10px 10px;
+background-attachment: fixed;
 }
-/*
-@media only screen and (max-width:800px)
-{
-    body 
-    {
-        margin-left:0;
-        margin-top:70px;
-        font: 400 15px/1.8 "Lato", sans-serif;        
-    }
-    nav
-    {
-        background: blue;
-        top:0;
-        position:fixed;
-        width:100%;
-        height:70px;
-    }
-    nav .Sections
-    {
-        background: green;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        width:100%;
-        height:70px;
-        position:fixed;
-    }
-    nav .Sections p
-    {
-        padding:10px;
-        margin-left:10px;
-        text-align: center;
-        background: pink;
-        text-decoration: none;
-        visibility: visible;
-    }
-    nav .Page
-    {
-        width:24px;
-        height:24px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        transition:0.4s;
-        stroke:var(--text-primary);
-    }
 
-}*/
-
-nav
-{
-    z-index: 1;
-    display:flex;
-    flex-direction: column;
-    margin-top:-8px;
-    margin-left:-8px;
-    width:70px;
-    height:100%;
+nav {
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position:fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display:none; 
+    }
 }
 nav .Sections
 {
@@ -129,6 +89,7 @@ nav .Sections
     flex-direction: column;
     align-items: center;
     position:fixed;
+    /* border: 1px solid black; */
 }
 nav .Page
 {
@@ -138,26 +99,27 @@ nav .Page
     margin-top: 40%;
     transition:0.25s;
     stroke:var(--text-primary);
+    /* border: 1px solid black; */
     
 }
-nav .focus:hover
+/* nav .focus:hover
 {
     width:26px;
     height:26px;
     margin-bottom:32%;
     margin-top:39%;
-}
+} */
 .th-Icon
 {
     width:22px;
     height:22px;
-    margin-left:-4px;
 }
 nav .Socials
 {
     top:85%;
     z-index:1;
     transition:0.4s;
+    
 }
 nav .Socials .lnk
 {
@@ -168,21 +130,24 @@ nav .Socials .lnk
     transition:0.4s;
     fill:var(--text-secondary);
 }
-nav .Socials .lnk:hover
+/* nav .Socials .lnk:hover
 {
     width:26px;
     height:26px;
     margin-top:26.5%;
-}
+} */
 nav .Theme
 {
-    
     cursor:pointer;
     background:transparent;
     overflow: hidden;
     color:var(--text-primary);
     border:1px solid transparent;
-    transition:all 120ms ease-out
+    transition:all 120ms ease-out;
+    display:flex;
+    justify-content: center;
+    width:26px;
+    height:26px;
 }
 nav .c-theme-grid
 {
@@ -192,7 +157,6 @@ nav .c-theme-grid
 nav .Theme svg:focus
 {
     outline:none;
-
 }
 main
 {
@@ -435,7 +399,8 @@ span .note
 }
 .Projects .card:hover
 {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    background-size: 150%;
 }
 .Projects .card .Content
 {
