@@ -175,7 +175,7 @@ const Alert = () =>
 // },
 //     });
     //----Themes----
-    const themes = ['light','sunset','sunrise','dark'];
+    const themes = ['dark','sunset','sunrise','light'];
     let count = 0;
     const thPicker = document.getElementById("th-Pick");
     const thList = document.getElementById("th-Grid");
@@ -203,17 +203,17 @@ const Alert = () =>
 
         switch(theme)
         {
-            case theme = 'light':
-			    thGrid.style.top = '0.025rem'
+            case theme = 'dark':
+			    thGrid.style.top = '-0rem'
 			    break;
 		    case theme = 'sunset':
-		    	thGrid.style.top = '-1.625rem'
+		    	thGrid.style.top = '-1.61rem'
 			    break;
 		    case theme = 'sunrise':
-			    thGrid.style.top = '-3.255rem'
-			    break;		    
-            case theme = 'dark':
-			    thGrid.style.top = '-4.9rem'
+			    thGrid.style.top = '-3.16rem'
+			    break;
+		    case theme = 'light':
+			    thGrid.style.top = '-4.71rem'
 			    break;
         }
     }
@@ -224,7 +224,7 @@ const sunset = `<svg class="th-Icon" fill="currentColor" aria-hidden="true" view
 const sunrise = `<svg class="th-Icon" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="Sunrise"><path d="M20 15.31 23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path></svg>`;
 const light = `<svg class="th-Icon" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="Light"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path></svg>`;
 
-thPicker.innerHTML = `<div class="c-theme-grid"> ${light} ${sunset} ${sunrise} ${dark} </div>`;
+thPicker.innerHTML = `<div class="c-theme-grid"> ${dark} ${sunset} ${sunrise} ${light} </div>`;
 
 thPicker.onclick = () =>
 {

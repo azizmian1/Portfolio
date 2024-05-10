@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aziz Mian Front-End Dev Portfolio">
+    <link rel="stylesheet" href="./Style/style.css"/>
+    <link rel="preconnect" href="https://dev2friend.ca"/>
+    <link rel="preconnect" href="https://github.com/azizmian1"/>
+    <link rel="preconnect" href="https://www.linkedin.com/in/aziz-mian-694b84244/"/>
+    <title>Aziz Mian</title>
+</head>
+<body>
+    <nav>
+        <div class="Sections">
+            <a href="#h" aria-label="Home">
+                <abbr title="Home">
+                    <i id="home" name="Home"></i>
+                </abbr>
+            </a>
+            <a href="#a" aria-label="About-Me">
+                <abbr title="About-Me">
+                    <i id="about" name="About-Me"></i>
+                </abbr>
+            </a>
+            <a href="#s" aria-label="Technical-Skills">
+                <abbr title="Technical-Skills">
+                    <i id="skills" name="Technical-Skills"></i>
+                </abbr>
+            </a>
+            <a href="#p" aria-label="Projects">
+                <abbr title="Projects">
+                    <i id="projects" name="Projects"></i>
+                </abbr>
+            </a>
+            <button id="th-Pick" class="Page Theme" aria-label="Themes"></button>
+            <div id="th-Grid" class="Theme-Grid"></div>
+        </div>
+        <div class="Sections Socials">
+            <a href="https://github.com/azizmian1" aria-label="Github">
+                <i id="git"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aziz-mian-694b84244/" aria-label="Linkdin">
+                <i id="lnkdin"></i>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section id="h" class="Home" name="Home">
+            <div class="Caption">
+                <h1>Aziz Mian</h1>
+                <p>Front-End Developer</p>
+                <a href="./Aziz Mian - Front-End Developer.pdf" alt="Resume" download="">
+                    <button class="Resume">
+                        Resume
+                    </button>
+                </a>
+                <button class="Contact btn" name="Contact" onclick="copy(),Alert()">
+                    <span id="Email" class="Email" hidden>
+                        abdulaziz.mian97@gmail.com
+                    </span>
+                    Contact
+                </button>
+                <div class="alert hide none">
+                    <span class="alert_body_first">
+                        <p class="note">Email-Copied</p>
+                        <i id="close" onclick="Alert()"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="a" class="About" name="About">
+            <div class="header">
+                <h2>
+                    About
+                </h2>
+            </div>
+            <p>
+                An aspiring front-end developer with a passion for crafting engaging and user-friendly digital experiences. Currently dividing my time completing a bachelor's degree in computer science and online bootcamps focused on full-stack development. I bring a fresh perspective, a hunger for learning, and a commitment to delivering cutting-edge web solutions. As I embark on this exciting journey as a front-end developer, I'm eager to take on new challenges, learn from experienced professionals, and make a meaningful impact in the world of web development. I'm ready to roll up my sleeves and turn your digital visions into reality.
+<br/><b>Let's build something amazing together.</b>
+
+            </p>
+        </section>
+        <div id="s" class="header">
+            <h2>Technical-Skills</h2>
+        </div>
+        <section class="Skills" name="Technical-Skills">
+            
+            <div class="icon" name="HTML">
+                <img src="./icons/html.png"  alt="HTML"/>
+                <p>
+                    HTML
+                </p>
+            </div>
+            <div class="icon" name="CSS">
+                <img src="./icons/css-3.png"  alt="CSS"/>
+                <p>
+                    CSS
+                </p>
+            </div>
+            <div class="icon" name="SASS/SCSS">
+                <img src="./icons/sass.png"  alt="SASS"/>
+                <p>
+                    SASS/SCSS
+                </p>
+            </div>
+            <div class="icon" name="JavaScript" >
+                <img src="./icons/js.png" alt="JavaScript"/>
+                <p>
+                    JavaScript
+                </p>
+            </div>
+            <div class="icon" name="PHP">
+                <img src="./icons/php.png"  alt="PHP"/>
+                <p>
+                    PHP
+                </p>
+            </div>
+            <div class="icon" name="JQuery" >
+                <img src="./icons/icons8-jquery-500.png" alt="JQuery"/>
+                <p>
+                    JQuery
+                </p>
+            </div>
+            <div class="icon" name="VS Code" >
+                <img src="./icons/icons8-vs-code-480.png" alt="VS Code"/>
+                <p>
+                    VS Code
+                </p>
+            </div>
+            <div class="icon" name="SQL">
+                <img src="./icons/sql-server.png"  alt="SQL"/>
+                <p>
+                    SQL
+                </p>
+            </div>
+            
+        </section>
+        <div id="p" class="header">
+            <h2>Projects</h2>
+        </div>
+        <section class="Projects" name="Projects">
+            <div class="container swipe">
+            <div class="Slider ">
+                <div class="card">
+                    <a href="https://dev2friend.ca">
+                        <div class="image" name="D2F">
+                            <img name="image" src="./images/d2f.png" alt="D2F"/>
+                        </div>
+                        <div class="Content">
+                            <h3>
+                                Dev2Friend
+                            </h3>
+                            <p class="info">
+                                <i id="html"></i> 
+                                <i id="java"></i>
+                                <i id="css"></i>
+                                <i id="php"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://azizmian1.github.io/Tic-Tac-Toe/">
+                        <div class="image" name="Tic Tac Toe">
+                            <img name="image" src="./images/tictactoe.png" alt="Tic Tac Toe"/>
+                        </div>
+                        <div class="Content">
+                            <h3>
+                                Tic Tac Toe
+                            </h3>
+                            <p class="info">
+                                <i id="html-1"></i> 
+                                <i id="java-1"></i>
+                                <i id="css-1"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://azizmian1.github.io/Weather/">
+                        <div class="image" name="Weather">
+                            <img name="image" src="./images/Weather.png" alt="Weather"/>
+                        </div>
+                        <div class="Content">
+                            <h3>
+                                Weather
+                            </h3>
+                            <p class="info">
+                                <i id="html-2"></i> 
+                                <i id="java-2"></i>
+                                <i id="css-2"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+               <!--- <div id="left" class="btn-next"></div>
+                <div id="right" class="btn-prev"></div>
+                <div class="paginate"></div>--->
+            </div>
+        </section>
+
+    </main>
+    <script src="./index.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
