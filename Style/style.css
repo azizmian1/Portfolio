@@ -179,6 +179,7 @@ main
     display:flex;
     text-align: center;
     justify-content: center;
+    
 }
 .Home p
 {
@@ -303,8 +304,9 @@ span .note
 .About p
 {
     padding: 100px 0 100px 0;
-    margin-left:70px;
-    margin-right:70px;
+    margin-left:50px;
+    margin-right:50px;
+    border:1px solid black;
 }
 .header
 {
@@ -454,7 +456,7 @@ p
         font-size: medium;
     }
     p{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 .Resume
